@@ -39,3 +39,8 @@ function squareNumber(num) {
 }
 x=squareNumber(5);
 console.log("Squareo 5 is: ",x)
+function checkOddEven(num){
+    if (num % 2 == 0) {
+        return "Even";
+    } else  
+}
