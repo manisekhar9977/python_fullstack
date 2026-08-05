@@ -42,5 +42,8 @@ console.log("Squareo 5 is: ",x)
 function checkOddEven(num){
     if (num % 2 == 0) {
         return "Even";
-    } else  
+    } else {
+        return "Odd";
+    }
 }
+console.log("Check if 7 is odd or even: ", checkOddEven(7)); 
