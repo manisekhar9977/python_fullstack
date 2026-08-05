@@ -3,6 +3,8 @@ from flask import Flask,render_template,jsonify,request
 
 app = Flask(__name__)
 
+users_db = {}
+
 @app.route('/')
 def home():
     return render_template("index.html")
@@ -36,3 +38,4 @@ def register():
     return render_template("register.html")
 if __name__ == '__main__':
     app.run(debug=True)
+    
