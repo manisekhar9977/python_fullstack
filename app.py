@@ -4,7 +4,18 @@ from flask import Flask,render_template,jsonify,request,redirect,url_for,session
 from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
-app.secret_key="super_secret_key"
+app.secret_key = "super_secret_key"
+app = Flask(__name__)
+
+print("================================")
+print("Flask root:", app.root_path)
+print("Template folder:", app.template_folder)
+print("Template path:", app.root_path + "/templates/index.html")
+print("================================")
+
+
+print("APP ROOT:", app.root_path)
+print("TEMPLATE FOLDER:", app.template_folder)
 
 def get_db_connection():
     conn = sqlite3.connect("users.db")
